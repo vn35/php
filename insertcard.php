@@ -12,7 +12,7 @@ if (!isset($_SESSION['cart']) || $_SESSION['cart'] == null) {
 	$newProduct[$idProduct]['qty'] = 1;
 	$_SESSION['cart'][$idProduct] = $newProduct[$idProduct];
 } else {
-	if (array_keys_exists($idProduct, $_SESSION['cart'])) {
+	if (array_keys_exists($idProduct, $_SESSION['cart'])) { //sublimetex ko hỗ trợ array_keys_exists = array_key_exists.
 		$_SESSION['cart'][$idProduct]['qty'] +=1;
 	} else {
 		$newProduct[$idProduct]['qty'] = 1;
