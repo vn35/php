@@ -18,7 +18,6 @@
  		echo "<tr>";
  		echo '<td>'.$list['name'] . '</td>';
  		echo "<td><input type='text' name='qty[".$list['id']."]'. value='". $list['qty']."']' /> </td>";
- 		echo '<td>'.$list['qty'] . '</td>';
  		echo '<td>'.$list['price'] . '</td>';
  		echo "<td>". $list['qty'] * $list['price']."</td>";
  		echo "<td><a href='deletecart.php?id=".$list['id']."'>Xóa</a></td>";
